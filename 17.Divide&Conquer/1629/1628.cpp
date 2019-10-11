@@ -12,7 +12,7 @@ long long cal(long long a, long long b, long long c) {
 
 	if (b % 2 == 0) { //짝수 2^8=2^4 * 2^4
 		//cout << "짝수 temp" << temp<<endl;
-		return (temp*temp) % c; 
+		return temp; 
 	}else {
 		//cout << "홀수 temp" << temp << endl;
 		return a * temp % c;
@@ -22,7 +22,7 @@ long long cal(long long a, long long b, long long c) {
 }
 int main() {
 	cin >> a >> b >> c;
-	cout << cal(a, b, c) << endl;
+	cout << cal(a, b, c) ;
 
 	return 0;
 }
